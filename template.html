@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><title>Logistic Map</title></head>
+  <body>
+    <div class="rate-form">
+      <form action="/chart" method="GET">
+        <div>
+          <label for="rate">Rate</label>
+          <input id="rate" type="text"
+            name="rate" value="{{.Rate}}"
+            onfocus="this.select()"
+            autofocus />
+          <input type="submit" />
+        </div>
+      </form>
+    </div>
+    {{.Body}}
+  </body>
+</html>
